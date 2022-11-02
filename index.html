@@ -101,18 +101,25 @@
         </section>
         <section>
             <h5>Forms</h5>
-            <form>
-                <!--Form method="POST" action="link to a page"
+            <!--Form method="POST" action="link to a page"
                 The action attribute determines where the form’s information goes.
                     The method attribute determines HOW the information will be sent and processed.
                 -->
-                <h1>Login to start creating your portfolio!</h1>
+            <p>Create an account:</p>
+            <form action="submission.html" method="GET">
                 <label for="username">Username:</label>
-                <input type="text" name="username" id="username">
                 <br>
-                <label for="user-pw">Password:</label>
-                <input type="password" name="user-pw" id="user-pw" />
+
+                <input id="username" name="username" type="text" required minlength="3" maxlength="15"
+                    pattern="[a-zA-Z0-9]+">
+                <br>
+                <label for="pw">Password:</label>
+                <br>
+                <input id="pw" name="pw" type="password" required minlength="8" maxlength="15">
+                <br>
+                <input type="submit" value="Submit">
             </form>
+
             <form>
                 <h1>Create a Burger!</h1>
                 <section class="protein">
