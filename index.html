@@ -11,10 +11,15 @@
 <body background="https://wallpaperaccess.com/thumb/3006253.jpg">
     <nav>
         <p>
-            <a href="#home">Home</a> | <a href="#">About</a> | <a href="#">Play</a>
+            <h1>✨HTML Practice✨</h1> <!--WIN . OR WIN ; for emojis on Windows-->
+            <a href="#embed">Embed</a> | <a href="#video">Video</a> | <a href="#audio">Audio</a> | <a href="#table">Table</a> | <a href="#form">Form</a> | <a href="#progressBar">Progress Bar</a>
         </p>
     </nav>
     <hr>
+    <figure>
+        <img src="https://miro.medium.com/max/1124/1*Cltmtt3ztXWe5PxlGfTspg.jpeg" alt="baby learning html" width="550" height="550"/>
+        <figcaption>Baby learning HTML</figcaption>
+    </figure>
     <header id="home">
         <h1>HTML Website Without CSS</h1>
         <details>
@@ -29,21 +34,27 @@
     <main>
         <section>
             <h2>HTML Cool Features!</h2>
-            <h3>iFrame</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/9QxX_C3GRZk"
-                title="YouTube video player" frameborder="0"
+            <h3 id="embed">Embed</h3>
+            <!--This can also be iFrame but embed can be used for anything videos, audios, gifs, etc-->
+            <embed width="560" height="315" src="https://www.youtube.com/embed/9QxX_C3GRZk" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+                allowfullscreen />
             <br><br>
-            <h3>Video</h3>
+            <h3 id="video">Video</h3>
             <video src="https://www.youtube.com/embed/9QxX_C3GRZk" width="320" height="240" controls>
                 Video not supported
             </video>
+            <br><br>
+            <h3 id="audio">Audio</h3>
+            <audio autoplay controls>
+                <!--audio taken from codecademy practice lesson, do not reproduce, I do not own or have rights to sound-->
+                <source src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3" type="audio/mp3">
+            </audio>
         </section>
         <br>
         <section>
-            <h3>Progress Bar</h3>
+            <h3 id="progressBar">Progress Bar</h3>
             <label for="html">HTML: </label> <progress id="html" value="80" max="100"> </progress>
             <br>
             <label for="css">CSS: </label> <progress id="css" value="50" max="100"> </progress>
@@ -52,7 +63,7 @@
         </section>
         <br>
         <section>
-            <h4>HTML Table</h4>
+            <h4 id="table">HTML Table</h4>
             <table>
                 <thead>
                     <tr>
@@ -100,7 +111,7 @@
             </table>
         </section>
         <section>
-            <h5>Forms</h5>
+            <h5 id="form">Forms</h5>
             <!--Form method="POST" action="link to a page"
                 The action attribute determines where the form’s information goes.
                     The method attribute determines HOW the information will be sent and processed.
@@ -195,9 +206,9 @@
             </form>
         </section>
     </main>
-    <section>
-        <h2>footer</h2>
-    </section>
+    <footer>
+        <p>✨ Thank you for visiting this semantic HTML pactice page! ✨</p>
+    </footer>
 </body>
 
 </html>
